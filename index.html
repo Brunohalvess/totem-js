@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.: Totem de Atendimento :.</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center"><span class="titulo badge badge-title">Totem</span> Gerador de Senhas</h1>
+        <p>
+        <p class="text-center">Simples projeto, utilizando bootstrap e javascript</p>
+        </p>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-header">
+                        1º Passo
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">*Retire sua Senha</h5>
+                        <hr>
+                        <p class="card-text text-center">Escolha uma opção abaixo</p>
+                        <button class="btn btn-block btn-success" onclick="gerarN()">SENHA NORMAL</button>
+                        <button class="btn btn-block btn-warning" onclick="gerarP()">SENHA PREFERÊNCIAL</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-header">
+                        2º Passo
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">*Acompanhe a fila</h5>
+                        <hr>
+                        <p class="card-text text-center">
+                            <dt class="text-center" id="listaDeSenha"></dt>
+                        </p>
+                        <button class="btn btn-block btn-secondary" disabled>Ultima Senha Chamada</button> <br>
+                        <p class="card-text">
+                        <h2 class="text-center"><span class="badge badge-secondary" id="ultimaSenha"> </span></h2>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-header">
+                        3º Passo
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">*Painel de Atendimento</h5>
+                        <hr>
+                        <p class="card-text">
+                        <h2 class="text-center"><span class="badge badge-success" id="chamarSenha"> </span></h2>
+                        </p>
+                        <button class="btn btn-block btn-success" onclick="chamar()">CHAMAR SENHA</button>
+                        <button class="btn btn-block btn-danger" onclick="refresh()">ATUALIZAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="text-center"> Desenvolvido para fins didáticos<br>
+            © 2024 Todos os direitos Reservados - StudioWebbi </p>
+    </footer>
+</body>
+
+</html>
